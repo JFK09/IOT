@@ -1,0 +1,20 @@
+#pragma once
+#include <Arduino.h>
+
+static const char AWS_ROOT_CA[] PROGMEM = R"EOF(
+-----BEGIN CERTIFICATE-----
+PASTE_AWS_ROOT_CA_HERE
+-----END CERTIFICATE-----
+)EOF";
+
+static const char DEVICE_CERT_PEM[] PROGMEM = R"EOF(
+-----BEGIN CERTIFICATE-----
+PASTE_DEVICE_CERTIFICATE_HERE
+-----END CERTIFICATE-----
+)EOF";
+
+static const char DEVICE_KEY_PEM[] PROGMEM = R"EOF(
+-----BEGIN PRIVATE KEY-----
+PASTE_DEVICE_PRIVATE_KEY_HERE
+-----END PRIVATE KEY-----
+)EOF";
